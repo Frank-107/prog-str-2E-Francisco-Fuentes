@@ -5,7 +5,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         double iva = 1.16;
 
-        double subtotal = pedirDouble(scanner, "Subtotal: ");
+        double subtotal = pedirDouble(scanner, "total rama: ");
         double descuento = subtotal*.10;
         double total = subtotal*iva-descuento;
 
