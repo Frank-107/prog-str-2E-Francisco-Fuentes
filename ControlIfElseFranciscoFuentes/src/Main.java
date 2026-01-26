@@ -5,12 +5,13 @@ public class Main{
         Scanner leer = new Scanner(System.in);
         System.out.println("¿Cual es su edad?");
         int edad = leer.nextInt();
-        System.out.println("¿Es usted un estudiante? \n Si = true No = false");
-        boolean estudiante = leer.nextBoolean();
         if (edad < 0 || edad > 120){
             System.out.println("Edad invalida");
+            return;
         }
-        else if (edad < 12){
+        System.out.println("¿Es usted un estudiante? \n Si = true No = false");
+        boolean estudiante = leer.nextBoolean();
+        if (edad < 12){
             tarifa = 50;
         }
         else if (edad<=17){
