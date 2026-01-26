@@ -1,6 +1,6 @@
 import java.util.*;
 public class Main{
-    static void main(String[] args) {
+    public static void main(String[] args) {
         int tarifa = 0;
         Scanner leer = new Scanner(System.in);
         System.out.println("¿Cual es su edad?");
@@ -35,9 +35,10 @@ public class Main{
             System.out.println("Es un estudiante");
         }
         else{
-            System.out.println("No es un esstudiante");
+            System.out.println("No es un estudiante");
         }
         System.out.println("Su tarifa es de: " + tarifa);
+        leer.close();
 
     }
 }
